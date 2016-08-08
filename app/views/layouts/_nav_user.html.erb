@@ -32,7 +32,7 @@ USER
           <ul class="dropdown-menu">
             <li><a href="/profile">Profile</a></li>
             <li><a href="/help">Help</a></li>
-            <li><a href="/edit">Edit</a></li>
+            <li><%= link_to "Edit", edit_user_registration_path %></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
           </ul>
